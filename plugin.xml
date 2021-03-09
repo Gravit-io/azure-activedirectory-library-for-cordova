@@ -88,6 +88,7 @@
         <hook type="after_platform_add" src="scripts/ios-strip-emulator-cpu.js" />
 
         <!-- (CB-11854) CODE_SIGN_ENTITLEMENTS for ios@4.3.0 and up -->
+        <!--
         <config-file target="*-Debug.plist" parent="keychain-access-groups">
             <array>
                 <string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
@@ -98,11 +99,13 @@
                 <string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
             </array>
         </config-file>
+        -->
 
         <!--
         Plist sections below are required for brokered authentication support
         https://github.com/AzureAD/azure-activedirectory-library-for-objc#brokered-authentication
         -->
+        <!--
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
                 <string>msauth</string>
@@ -124,6 +127,7 @@
                 </dict>
             </array>
         </config-file>
+        -->
     </platform>
 
     <platform name="windows">
