@@ -10,7 +10,7 @@
       "windows"
     ]
   },
-  "devDependencies": {
+  "dependencies": {
     "xcode": "^3.0.1"
   },
   "engines": {
